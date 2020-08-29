@@ -1,1 +1,23 @@
-<section class="hello"></section>
+<section class="hello">
+  <h5>slider demo</h5>
+  <h6>Default</h6>
+  <app-slider></app-slider>
+  <h6>thyMax: 20 thyMin: 10</h6>
+  <app-slider thyMax="20" [thyMin]="10"></app-slider>
+  <h6>thyVertical: true</h6>
+  <div class="vertical">
+    <app-slider [thyVertical]="true"></app-slider>
+  </div>
+
+  <h6>input value</h6>
+  <input type="number" [(ngModel)]="sliderValue" />
+  <app-slider
+    [(ngModel)]="sliderValue"
+    [thyMin]="0"
+    [thyMax]="1000"
+    [thyStep]="2"
+  ></app-slider>
+
+  <h6>disabled</h6>
+  <app-slider [thyDisabled]="true" [ngModel]="76"></app-slider>
+</section>

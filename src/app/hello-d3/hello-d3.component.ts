@@ -7,6 +7,8 @@ import { select } from 'd3';
   styleUrls: ['./hello-d3.component.scss'],
 })
 export class HelloD3Component implements OnInit {
+  public sliderValue = 23;
+
   constructor() {}
 
   ngOnInit(): void {
